@@ -16,12 +16,10 @@ typedef struct node
     struct node *next;
 } node;
 
-// unload one individual list (do for each hash index)
+// Unload one individual list (do for each hash index)
 void unloadIndividualList(node *start);
 
-// Choose number of buckets in hash table
-
-
+// Number of buckets in hash table
 const unsigned int N = 20000;
 
 int SIZE = 0;
