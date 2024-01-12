@@ -21,20 +21,7 @@ void unloadIndividualList(node *start);
 
 // Choose number of buckets in hash table
 
-/*
-    IMPORTANT NOTE: running this on a local machine which tries to initiate
-    a very large array on RAM may cause errors trying to find contiguous memory. 
-    
-    The dictionary is ~480000 elements so even
-    a hash table which aims to have an word per hash element 
-    (480000 element hash table) would be 480000 * sizeof(pointer), 
-    which on a 64-bit machine would be: 480000 * 64 = ~30 million bytes. 
-    this is still ~3% of a gigabyte so not to pressing for any computer 
-    manufactured in the 21st century but still an important consideration.
 
-    Running a version which requests bytes from a larger server, 
-    optimal speed is 20000-50000 elements for the dictionary with ~480000 elements.
-*/
 const unsigned int N = 20000;
 
 int SIZE = 0;
